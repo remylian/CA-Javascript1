@@ -1,0 +1,22 @@
+:root {
+	--color-primary: #0a3641;
+	--color-secondary: #ebebeb;
+	--color-activity: #fbaf00;
+	--color-title: #9cd7d3;
+
+	--border-radius-left: 0.7rem 0 0 0.7rem;
+	--border-radius-right: 0 0.7rem 0.7rem 0;
+	--border-radius-top: 0.7rem 0.7rem 0 0;
+	--border-radius-bottom: 0 0 0.7rem 0.7rem;
+	--border-radius-full: 0.7rem;
+
+	--border-black: 2px solid black;
+
+	--card-name-padding: 0.5rem 0;
+	--card-text-bold: bold;
+
+	--box-shadow-grey: 3px 3px 3px 0.5px grey;
+	--box-shadow-black: 6px 5px 5px 0px rgba(0, 0, 0, 0.5);
+
+	--double-font: 2rem;
+}

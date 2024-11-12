@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Alegreya&family=Bacasime+Antique&family=Girassol&family=Lobster&display=swap"
+			rel="stylesheet" />
+		<link rel="stylesheet" href="/assets/src/css/style.css" />
+		<script type="module" src="/assets/src/js/cart.js"></script>
+		<title>Rainydays - Cart</title>
+	</head>
+	<body>
+		<header>
+			<nav class="main-nav">
+				<div class="hamburger">
+					<details>
+						<summary>
+							<img src="/assets/src/img/shared/hamburger.svg" alt="hamburger menu icon" />
+						</summary>
+						<nav class="header-nav-mobile">
+							<a class="nav-item nav-home" href="/index.html">Home</a>
+							<a class="nav-item nav-about" href="about.html">About Us</a>
+							<a class="nav-item nav-contact" href="contact.html">Contact</a>
+						</nav>
+					</details>
+				</div>
+				<h1 class="header-left">
+					<a href="/index.html">
+						<img src="/assets/src/img/shared/header-logo.svg" alt="Rainydays Logo" />
+					</a>
+				</h1>
+				<nav class="header-nav">
+					<a class="nav-item nav-home" href="/index.html">Home</a>
+					<a class="nav-item nav-about" href="about.html">About Us</a>
+					<a class="nav-item nav-contact" href="contact.html">Contact</a>
+				</nav>
+				<div class="header-right">
+					<a href="cart.html">
+						<img src="/assets/src/img/shared/Cart.svg" alt="an image of your cart" />
+						<span class="cart-count">0</span>
+					</a>
+				</div>
+			</nav>
+		</header>
+
+		<main>
+			<section class="banner">
+				<img
+					class="banner-img"
+					src="/assets/src/img/shared/banner.jpg"
+					alt="depiction of a man standing in front of a panoramic landscape of mountains wearing a high quality weatherproof jacket" />
+			</section>
+
+			<div class="title"><h2>Your Cart</h2></div>
+
+			<section class="main centered">
+				<div class="my-cart">
+					<h2>Cart Details</h2>
+
+					<!-- Empty Cart Message -->
+					<div id="empty-cart-message" class="empty-cart-message">Your cart is empty.</div>
+
+					<!-- Cart Items Container -->
+					<div id="cart-items-container"></div>
+
+					<!-- Template for Cart Items -->
+					<template id="cart-item-template">
+						<div class="cart-product">
+							<div class="product-box">
+								<div class="product-text-wrapper">
+									<div class="product-name">Product Name</div>
+									<div class="product-price">$0.00</div>
+								</div>
+								<img src="" alt="Product thumbnail" class="product-image" />
+							</div>
+							<button class="remove-cart-item-button">Remove from Cart</button>
+						</div>
+					</template>
+
+					<!-- Total Cost -->
+					<div class="cost-box" id="cart-total">
+						<div class="total-cost">
+							<div class="total-text">Total amount to pay:</div>
+							<div class="total-price">$0.00</div>
+						</div>
+					</div>
+
+					<!-- Checkout and Empty Cart Buttons -->
+					<div class="checkout-wrapper centered">
+						<button id="empty-cart-btn" class="empty-cart-button">Empty Cart</button>
+						<a class="checkout-btn" href="checkout.html">Continue to checkout</a>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<footer class="footer-main">
+			<div class="footer-left">
+				<a href="/index.html">
+					<img src="/assets/src/img/shared/header-logo.svg" alt="RainyDays Logo" />
+				</a>
+			</div>
+			<nav class="footer-socialmedia">
+				<a class="footer-icon" href="#">
+					<img src="/assets/src/img/shared/Icon-youtube.svg" alt="depiction of the youtube logo" />
+				</a>
+				<a class="footer-icon" href="#">
+					<img src="/assets/src/img/shared/Icon-Twitter.svg" alt="depiction of the twitter logo" />
+				</a>
+				<a class="footer-icon" href="#">
+					<img src="/assets/src/img/shared/Icon-instagram.svg" alt="depiction of the instagram logo" />
+				</a>
+				<a class="footer-icon" href="#">
+					<img src="/assets/src/img/shared/Icon-Facebook.svg" alt="depiction of the facebook logo" />
+				</a>
+			</nav>
+			<div class="footer-right">
+				<ul>
+					<li><p>Need Help?</p></li>
+					<li>FAQ</li>
+					<li><a href="contact.html">Contact Us</a></li>
+					<li>Shipping & Delivery</li>
+					<li>Returns</li>
+				</ul>
+			</div>
+		</footer>
+	</body>
+</html>

@@ -1,15 +1,23 @@
-const apiUrl = 'https://docs.noroff.dev/docs/v2/e-commerce/rainy-days';
+import { fetchProducts } from './productService.mjs';
+import { renderProducts } from './displayProducts.mjs';
+import { addFilterListener } from './filter.mjs';
+import { handleError } from './errorHandler.mjs';
+import { updateCartCount } from './cartService.mjs';
 
-fetch(apiUrl)
-	.then((response) => {
-		if (!response.ok) {
-			throw new Error('Network response was not ok');
+document.addEventListener('DOMContentLoaded', async () => {
+	updateCartCount();
+
+	try {
+		const products = await handleError(fetchProducts, {
+			errorMessageElement: document.getElementById('error-message'),
+			loadingSpinnerElement: document.getElementById('loading'),
+		});
+
+		if (products) {
+			renderProducts(products);
+			addFilterListener(products, renderProducts);
 		}
-		return response.json();
-	})
-	.then((data) => {
-		console.log(data);
-	})
-	.catch((error) => {
-		console.log('Error:', error);
-	});
+	} catch (error) {
+		console.error('An error occurred during initialization:', error);
+	}
+});

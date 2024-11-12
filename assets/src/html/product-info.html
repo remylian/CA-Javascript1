@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Alegreya&family=Bacasime+Antique&family=Girassol&family=Lobster&display=swap"
+			rel="stylesheet" />
+		<title>Rainy Days - Product Details</title>
+		<link rel="stylesheet" href="../css/style.css" />
+		<script type="module" src="../js/productDetails.mjs"></script>
+	</head>
+	<body>
+		<header>
+			<nav class="main-nav">
+				<div class="hamburger">
+					<details>
+						<summary>
+							<img src="../../src/img/shared/hamburger.svg" alt=" hamburger menu icon" />
+						</summary>
+						<nav class="header-nav-mobile">
+							<a class="nav-item nav-home" href="#">Home</a>
+							<a class="nav-item nav-about" href=".about.html">About Us</a>
+							<a class="nav-item nav-contact" href=".contact.html">Contact</a>
+						</nav>
+					</details>
+				</div>
+				<h1 class="header-left">
+					<a href="index.html">
+						<img src="../img/shared/header-logo.svg" alt="Rainydays Logo" />
+					</a>
+				</h1>
+				<nav class="header-nav">
+					<a class="nav-item nav-home" href="index.html">Home</a>
+					<a class="nav-item nav-about" href="src/html/about.html">About Us</a>
+					<a class="nav-item nav-contact" href="src/html/contact.html">Contact</a>
+				</nav>
+				<div class="header-right">
+					<a href="/assets/src/html/cart.html">
+						<img src="../img/shared/Cart.svg" alt="an image of your cart" />
+						<span class="cart-count">0</span>
+					</a>
+				</div>
+			</nav>
+		</header>
+
+		<main>
+			<section class="banner">
+				<img
+					class="banner-img"
+					src="/assets/src/img/shared/banner.jpg"
+					alt=" depiction of a man standing in front of a panoramic landscape of mountains wearing a high quality weatherproof jacket" />
+			</section>
+
+			<section>
+				<div class="title">
+					<h2>product Details!</h2>
+				</div>
+			</section>
+
+			<div id="loading" class="loading-spinner">Loading product details...</div>
+			<div id="error-message" class="error-message">Sorry, something went wrong. Please try again later.</div>
+
+			<section class="product-details" id="product-details">
+				<div class="product-image-container">
+					<img id="product-image" src="" alt="Product Image" class="product-image" />
+				</div>
+				<div class="product-info">
+					<h2 id="product-title">Product Title</h2>
+					<p id="product-description">Product Description</p>
+					<p><strong>Price: </strong><span id="product-price"></span></p>
+					<p><strong>Available Sizes: </strong><span id="product-sizes"></span></p>
+					<button id="add-to-cart" class="add-to-cart-button">Add to Cart</button>
+				</div>
+			</section>
+		</main>
+
+		<footer class="footer-main">
+			<div class="footer-left">
+				<a href="../../../index.html">
+					<img src="../img/shared/header-logo.svg" alt="RainyDays Logo" />
+				</a>
+			</div>
+			<nav class="footer-socialmedia">
+				<a class="footer-icon" href="#">
+					<img src="../img/shared/Icon-youtube.svg" alt="depiction of the youtube logo" />
+				</a>
+				<a class="footer-icon" href="#">
+					<img src="../img/shared/Icon-Twitter.svg" alt="depiction of the twitter logo" />
+				</a>
+				<a class="footer-icon" href="#">
+					<img src="../img/shared/Icon-instagram.svg" alt="depiction of the instagram logo" />
+				</a>
+				<a class="footer-icon" href="#">
+					<img src="../img/shared/Icon-Facebook.svg" alt="depiction of the facebook logo" />
+				</a>
+			</nav>
+			<div class="footer-right">
+				<ul>
+					<li><p>Need Help?</p></li>
+					<li>FAQ</li>
+					<li><a href=".contact.html">Contact Us</a></li>
+					<li>Shipping & Delivery</li>
+					<li>Returns</li>
+				</ul>
+			</div>
+		</footer>
+	</body>
+</html>

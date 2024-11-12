@@ -1,0 +1,32 @@
+footer {
+	background-color: var(--color-primary);
+	color: var(--color-secondary);
+
+	/* height: 10rem; */
+}
+
+footer a {
+	color: var(--color-secondary);
+	text-decoration: none;
+}
+
+.footer-main {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.footer-socialmedia {
+	display: flex;
+	gap: var(--double-font);
+	height: auto;
+	/* padding-top: 3rem; */
+}
+
+h4 {
+	text-decoration: underline;
+}
+
+ul {
+	list-style: none;
+}

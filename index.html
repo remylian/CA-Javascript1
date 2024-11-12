@@ -1,0 +1,129 @@
+		<!DOCTYPE html>
+		<html lang="en">
+			<head>
+				<meta charset="UTF-8" />
+				<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+				<link rel="preconnect" href="https://fonts.googleapis.com" />
+				<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+				<link
+					href="https://fonts.googleapis.com/css2?family=Alegreya&family=Bacasime+Antique&family=Girassol&family=Lobster&display=swap"
+					rel="stylesheet" />
+				<title>Rainydays - Home</title>
+				<link rel="stylesheet" href="assets/src/css/style.css" />
+				<script type="module"  src="/assets/src/js/main.js"></script>
+			</head>
+		
+			<body>
+				<header>
+					<nav class="main-nav">
+						<div class="hamburger">
+							<details>
+								<summary>
+									<img src="assets/src/img/shared/hamburger.svg" alt=" hamburger menu icon" />
+								</summary>
+								<nav class="header-nav-mobile">
+									<a class="nav-item nav-home" href="index.html">Home</a>
+									<a class="nav-item nav-about" href="src/html/about.html">About Us</a>
+									<a class="nav-item nav-contact" href="src/html/contact.html">Contact</a>
+								</nav>
+							</details>
+						</div>
+						<h1 class="header-left">
+							<a href="index.html">
+								<img src="assets/src/img/shared/header-logo.svg" alt="Rainydays Logo" />
+							</a>
+						</h1>
+		
+						<nav class="header-nav">
+							<a class="nav-item nav-home" href="index.html">Home</a>
+							<a class="nav-item nav-about" href="src/html/about.html">About Us</a>
+							<a class="nav-item nav-contact" href="src/html/contact.html">Contact</a>
+						</nav>
+		
+						<div class="header-right">
+							<a href="/assets/src/html/cart.html">
+								<img src="assets/src/img/shared/Cart.svg" alt="an image of your cart" />
+								<span class="cart-count">0</span>
+							</a>
+						</div>
+					</nav>
+				</header>
+		
+				<main>
+					<section class="banner">
+						<img
+							class="banner-img"
+							src="/assets/src/img/shared/banner.jpg"
+							alt=" depiction of a man standing in front of a panoramic landscape of mountains wearing a high quality weatherproof jacket" />
+					</section>
+		
+					<section>
+						<div class="title">
+							<h2>Welcome to Rainydays!</h2>
+						</div>
+					</section>
+		
+					<div id="filters" class="filters-section">
+						<label for="category">Products:</label>
+						<select id="category">
+							<option value="all">All</option>
+							<option value="male">Men</option>
+							<option value="female">women</option>
+							<option value="sale">Sale</option>
+						</select>
+					</div>
+		
+					<div id="loading" class="loading-spinner">Loading products...</div>
+		
+					<div id="error-message" class="error-message">Sorry, something went wrong. Please try again later.</div>
+		
+					<template id="product-card-template">
+						<div class="featured-item">
+							<a href="#" class="img-container">
+								<img src="" alt="Product Image" class="product-image" />
+								<div class="item-name">Product Name</div>
+							</a>
+							<button class="add-to-cart-button">Add to Cart</button>
+						</div>
+					</template>
+		
+					<section id="product-list" class="featured-items"></section>
+				</main>
+		
+				<footer class="footer-main">
+					<div class="footer-left">
+						<a href="index.html">
+							<img src="assets/src/img/shared/header-logo.svg" alt="RainyDays Logo" />
+						</a>
+					</div>
+		
+					<nav class="footer-socialmedia">
+						<a class="footer-icon" href="#">
+							<img src="assets/src/img/shared/Icon-youtube.svg" alt="depiction of the youtube logo" />
+						</a>
+						<a class="footer-icon" href="#">
+							<img src="assets/src/img/shared/Icon-Twitter.svg" alt="depiction of the twitter logo" />
+						</a>
+						<a class="footer-icon" href="#">
+							<img src="assets/src/img/shared/Icon-instagram.svg" alt="depiction of the instagram logo" />
+						</a>
+						<a class="footer-icon" href="#">
+							<img src="assets/src/img/shared/Icon-Facebook.svg" alt="depiction of the facebook logo" />
+						</a>
+					</nav>
+		
+					<div class="footer-right">
+						<ul>
+							<li><p>Need Help?</p></li>
+							<li>FAQ</li>
+							<li><a href="/src/html/contact.html">Contact Us</a></li>
+							<li>Shipping & Delivery</li>
+							<li>Returns</li>
+						</ul>
+					</div>
+				</footer>
+			</body>
+		</html>
+		
+	</body>
+</html>

@@ -1,0 +1,107 @@
+@import url('./partials/header.css');
+@import url('./partials/main.css');
+@import url('./partials/variables.css');
+@import url('./partials/footer.css');
+@import url('./partials/banner.css');
+@import url('./partials/product.css');
+@import url('.//partials/title.css');
+@import url('./partials/reset.css');
+@import url('./partials/cart.css');
+body {
+	background-color: var(--color-secondary);
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	color: var(--color-primary);
+}
+
+.centered {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+/* .hero-banner {
+	background: url('../img/shared/banner.jpg') no-repeat center center/cover;
+	color: var(--color-secondary);
+	padding: 6rem 2rem;
+	text-align: center;
+} */
+
+.banner-content h1 {
+	font-family: 'Girassol', serif;
+	font-size: 4rem;
+	color: var(--color-s);
+	margin: 0;
+}
+
+.title h2 {
+	color: var(--color-title);
+	font-size: 2rem;
+	font-family: 'Girassol', serif;
+	font-weight: lighter;
+}
+
+.filters-section {
+	margin: 2rem;
+	text-align: center;
+}
+
+.loading-spinner {
+	display: none;
+	text-align: center;
+	font-size: 1.5rem;
+	color: var(--color-primary);
+}
+
+.error-message {
+	display: none;
+	color: red;
+	text-align: center;
+	margin: 1rem;
+}
+
+@media (max-width: 1024px) {
+	.main-nav {
+		justify-content: space-between;
+		align-items: end;
+	}
+
+	.header-nav {
+		display: none;
+	}
+
+	.hamburger {
+		display: flex;
+	}
+
+	.header-nav-mobile {
+		display: flex;
+		flex-direction: column;
+		align-self: end;
+		position: absolute;
+		background-color: var(--color-primary);
+		border: 0.5px solid var(--color-activity);
+		border-radius: var(--border-radius-full);
+	}
+
+	.header-right {
+		padding-right: 1rem;
+	}
+
+	.footer-left {
+		display: none;
+	}
+
+	.footer-socialmedia {
+		gap: 0.5rem;
+	}
+
+	.featured-items {
+		flex-direction: column;
+	}
+
+	img {
+		max-width: 100%;
+		height: auto;
+	}
+}
