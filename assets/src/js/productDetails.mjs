@@ -1,6 +1,8 @@
 import { handleError } from './errorHandler.mjs';
 import { addItemToCart, updateCartCount } from './cartService.mjs';
 
+// fetching product info
+
 async function fetchProductById(productId) {
 	try {
 		const response = await fetch(`https://v2.api.noroff.dev/rainy-days/${productId}`);

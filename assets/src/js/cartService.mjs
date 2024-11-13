@@ -1,5 +1,3 @@
-// cartService.mjs
-
 // function to get items from the cart in local storage
 export function getCartItems() {
 	const cart = localStorage.getItem('cart');
@@ -11,11 +9,24 @@ export function addItemToCart(item) {
 	const cart = getCartItems();
 	cart.push(item);
 	localStorage.setItem('cart', JSON.stringify(cart));
+	console.log(getCartItems());
+	updateCartCount();
 }
 
-// function to clear the cart
+//function to remove item from cart
+export function removeFromCart(productId) {
+	let cartItems = getCartItems();
+
+	cartItems = cartItems.filter((item) => item.id !== productId);
+
+	localStorage.setItem('cart', JSON.stringify(cartItems));
+	updateCartCount();
+}
+
+// function to empty the cart
 export function clearCart() {
 	localStorage.removeItem('cart');
+	updateCartCount();
 }
 
 // function to update cart count elements

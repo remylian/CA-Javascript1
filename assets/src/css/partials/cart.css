@@ -1,4 +1,4 @@
-.product-box {
+.cart-product {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -6,6 +6,25 @@
 	padding-bottom: 1rem;
 }
 
+.product-box {
+	align-self: center;
+}
+
 .product-box img {
 	max-width: 25%;
+}
+
+.checkout-wrapper {
+	display: flex;
+	flex-direction: column;
+}
+
+.checkout-btn {
+	color: var(--color-primary);
+	padding-block: 1rem;
+}
+
+.empty-cart-button {
+	background-color: var(--color-activity);
+	margin-bottom: 1rem;
 }
