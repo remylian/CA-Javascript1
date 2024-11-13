@@ -9,7 +9,6 @@ export function addItemToCart(item) {
 	const cart = getCartItems();
 	cart.push(item);
 	localStorage.setItem('cart', JSON.stringify(cart));
-	console.log(getCartItems());
 	updateCartCount();
 }
 
