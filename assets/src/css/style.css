@@ -7,6 +7,11 @@
 @import url('.//partials/title.css');
 @import url('./partials/reset.css');
 @import url('./partials/cart.css');
+@import url('./partials/checkout.css');
+@import url('./partials/confirmation.css');
+@import url('./partials/about.css');
+@import url('./partials/confirmation.css');
+
 body {
 	background-color: var(--color-secondary);
 	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -19,13 +24,6 @@ body {
 	align-items: center;
 	text-align: center;
 }
-
-/* .hero-banner {
-	background: url('../img/shared/banner.jpg') no-repeat center center/cover;
-	color: var(--color-secondary);
-	padding: 6rem 2rem;
-	text-align: center;
-} */
 
 .banner-content h1 {
 	font-family: 'Girassol', serif;

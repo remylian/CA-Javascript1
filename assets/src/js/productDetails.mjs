@@ -27,6 +27,7 @@ function renderProductDetails(product) {
 		document.getElementById('product-details').innerHTML = '<p>product not found</p>';
 		return;
 	}
+
 	document.getElementById('product-image').src = product.image?.url || '';
 	document.getElementById('product-image').alt = product.image?.alt || 'Product image';
 	document.getElementById('product-title').textContent = product.title;
@@ -36,7 +37,7 @@ function renderProductDetails(product) {
 
 	document.getElementById('add-to-cart').addEventListener('click', () => {
 		addItemToCart(product);
-		alert('Great choice! Product added to cart');
+		alert('Product added to cart');
 	});
 }
 

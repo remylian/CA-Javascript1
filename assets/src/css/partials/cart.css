@@ -10,6 +10,11 @@
 	align-self: center;
 }
 
+.product-name,
+.product-price {
+	padding-block: 1rem;
+}
+
 .product-box img {
 	max-width: 25%;
 }
@@ -19,12 +24,22 @@
 	flex-direction: column;
 }
 
+.remove-cart-item-button {
+	background-color: var(--color-title);
+	margin-bottom: 1rem;
+	align-self: center;
+}
+
+.total-text {
+	padding-top: 1rem;
+}
+
 .checkout-btn {
 	color: var(--color-primary);
 	padding-block: 1rem;
 }
 
 .empty-cart-button {
-	background-color: var(--color-activity);
+	border-radius: 5px;
 	margin-bottom: 1rem;
 }

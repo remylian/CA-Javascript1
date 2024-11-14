@@ -11,13 +11,14 @@ function renderCartItems() {
 	const cartItems = getCartItems();
 	const cartItemsContainer = document.getElementById('cart-items-container');
 	const cartItemTemplate = document.getElementById('cart-item-template').content;
-
+	const checkoutForms = document.getElementById('checkout-forms');
 	// clear current items in cart
 	cartItemsContainer.innerHTML = '';
 
 	if (cartItems.length === 0) {
 		// show the empty cart message if the cart is empty
 		document.getElementById('empty-cart-message').style.display = 'block';
+		checkoutForms.style.display = 'none';
 	} else {
 		// hide the empty cart message if there are items
 		document.getElementById('empty-cart-message').style.display = 'none';
@@ -38,6 +39,7 @@ function renderCartItems() {
 		});
 
 		updateTotalCost(cartItems);
+		checkoutForms.style.display = 'block';
 	}
 
 	updateCartCount();

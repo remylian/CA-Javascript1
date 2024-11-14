@@ -1,11 +1,11 @@
-.nav-home {
+/* .nav-home {
 	background-color: var(--color-title);
 	border-radius: var(--border-radius-top);
 	color: var(--color-primary);
-}
+} */
 
 .nav-home:hover {
-	color: var(--color-primary);
+	color: var(--color-activity);
 }
 
 .featured-items {
