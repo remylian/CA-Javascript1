@@ -21,7 +21,7 @@ export function renderProducts(products) {
 		productName.textContent = product.title;
 
 		const productLink = template.querySelector('a');
-		productLink.href = `../../../product.html?id=${product.id}`;
+		productLink.href = `product.html?id=${product.id}`;
 
 		const addToCartButton = template.querySelector('.add-to-cart-button');
 		addToCartButton.addEventListener('click', () => {
